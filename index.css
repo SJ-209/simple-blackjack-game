@@ -15,7 +15,7 @@ body {
     transform: translate(-50%, -50%);
     width: 40rem;
     height: 30rem;
-    border: 8px solid rgb(192, 35, 35);
+    border: 8px solid rgba(192, 35, 35, 0.666);
     border-radius: 1000px;
 }
 
