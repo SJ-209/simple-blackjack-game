@@ -3,8 +3,20 @@ body {
     background-image: url("images/table.png");
     background-size: cover;
     font-weight: bold;
+    font-size: x-large;
     color: white;
     text-align: center;
+}
+
+.center-div {
+    position: absolute;   /* Take the div out of the normal flow */
+    top:50%;            /* Move top-left to the center */
+    left: 50%;   
+    transform: translate(-50%, -50%);
+    width: 40rem;
+    height: 30rem;
+    border: 8px solid rgb(192, 35, 35);
+    border-radius: 1000px;
 }
 
 h1 {
@@ -18,6 +30,7 @@ h1 {
 button {
     color: #016f32;
     width: 150px;
+    height: 50px;
     background: goldenrod;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -26,4 +39,17 @@ button {
     border-radius: 2px;
     margin-bottom: 2px;
     margin-top: 2px;
+}
+
+@media screen and (max-width: 695px) {
+    button {
+        width: 50%;  /* Make buttons full width on mobile */
+        margin: 5px 0;  /* Add some vertical spacing */
+    }
+    
+    .center-div {
+        width: 90%;  /* Make the center div responsive */
+        height: auto;
+        min-height: 20rem;
+    }
 }
